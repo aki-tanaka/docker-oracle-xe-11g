@@ -45,7 +45,4 @@ echo "alter profile DEFAULT limit password_life_time UNLIMITED;" | sqlplus -s SY
 echo "alter user SYSTEM identified by oracle account unlock;" | sqlplus -s SYSTEM/oracle
 cat /assets/apex-default-pwd.sql | sqlplus -s SYSTEM/oracle
 
-# Remove installation files
-rm -r /assets/
-
 exit $?
